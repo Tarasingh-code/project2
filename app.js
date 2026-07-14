@@ -1,1 +1,2 @@
 // Add some features to your app.js file
+console
