@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Code</title>
+    <title>Glitch Protocol</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="Game-container">
+        <h1>Welcome to Glitch Protocol</h1>
+        <div class="game-info">
+            <p>Level: <span id ="level">1</span></p>
+            <p>Score: <span id ="score">0</span></p>
+            <p>
+                Lives:
+                 <span id="lives">
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                 </span>
+            </p>
+            <p>Combo:<span id="combo">0</span></p>
+            <p>Best Score: <span id="high-score">0</span></p>
+            <div class="theme-selector">
+
+    <label for="theme">Choose Theme:</label>
+
+    <select id="theme">
+        <option value="cyberpunk">Cyberpunk</option>
+        <option value="midnight">Midnight</option>
+        <option value="light">Light</option>
+    </select>
+
+</div>
+        </div>
+        <p id="message">Press Start to Begin</p>
+
+        <button id="start-button">Start Game</button>
+        <div class ="Game-Board">
+            <button class="color-btn red"data-color="red">Red</button>
+            <button class="color-btn blue"data-color="blue">Blue</button>
+            <button class="color-btn green"data-color="green">Green</button>
+            <button class="color-btn yellow"data-color="yellow">Yellow</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
